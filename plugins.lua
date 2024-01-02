@@ -1,5 +1,5 @@
 local plugins = {
- {
+  {
     "neovim/nvim-lspconfig",
     config = function()
       require "plugins.configs.lspconfig"
@@ -21,6 +21,19 @@ local plugins = {
     opts = function()
       return require "custom.configs.null-ls"
     end,
+  },
+  {
+    'dracula/vim',
+    lazy = false,
+  },
+  'wbthomason/packer.nvim',
+  'glepnir/lspsaga.nvim',
+  'nvim-lua/plenary.nvim',
+  'mfussenegger/nvim-dap',
+
+  -- rust
+  {
+    'simrat39/rust-tools.nvim',
   },
 }
 
